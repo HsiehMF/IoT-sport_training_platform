@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_my_information" android:icon="@drawable/ic_account_circle_black"
+            android:title="管理個人資訊" />
+        <item android:id="@+id/nav_today_train" android:icon="@drawable/ic_today_black_48dp"
+            android:title="管理訓練行程" />
+        <item android:id="@+id/nav_apply_coach" android:icon="@drawable/ic_mail_outline_black_48dp"
+            android:title="申請教練" />
+        <item android:id="@+id/nav_manage_train_record" android:icon="@drawable/ic_timer_black_48dp"
+            android:title="管理訓練紀錄" />
+    </group>
+
+    <item android:title="Setting">
+        <menu>
+            <item android:id="@+id/nav_setting" android:icon="@drawable/ic_settings_black_48dp"
+                android:title="設定" />
+            <item android:id="@+id/nav_logout" android:icon="@drawable/ic_power_settings_new_black_48dp"
+                android:title="登出" />
+        </menu>
+    </item>
+
+</menu>

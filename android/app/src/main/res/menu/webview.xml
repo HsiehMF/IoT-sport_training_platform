@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/quick_CreateNewSchedule"
+        android:title="新增課表"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/quick_ManagePlayer"
+        android:title="管理社團"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+</menu>

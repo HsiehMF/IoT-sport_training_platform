@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="110dp"
+    android:orientation="horizontal"
+    android:background="#00cc99"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:gravity="center_vertical">
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="CheckBox"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:checked="false" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ig_right_arrow"
+            android:src="@drawable/right_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所屬單位  : "
+                    android:id="@+id/tv_unit"
+                    android:textColor="#333"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/ci_course_name"
+                    android:layout_below="@+id/ig_right_arrow"
+                    android:layout_alignEnd="@+id/checkBox1"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#333"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/ci_crowd_name"
+                    android:textSize="13dp"
+                    android:textColor="#333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="制定日期  : "
+                    android:id="@+id/tv_date"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#333"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016/mm/dd"
+                    android:id="@+id/ci_schedule_date"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/ci_course_name"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#333"
+                    android:textSize="13dp"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

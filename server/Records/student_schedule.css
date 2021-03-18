@@ -1,0 +1,17 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+th,td {
+
+	text-align: center !important;
+
+}
+
+th {
+
+	font-weight: bold !important; 
+
+}

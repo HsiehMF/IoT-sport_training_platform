@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_create_course"
+    tools:context="com.example.administrator.myconnet.Function.Friends.CreateCourse"
+    android:background="#cddfcb">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="社團名稱："
+                android:id="@+id/textView2"
+                android:textSize="16dp"
+                android:textColor="#333" />
+
+            <EditText
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_create_course_name"
+                android:background="@drawable/bg_edittext"
+                android:inputType="text"
+                android:hint="請輸入"
+                android:paddingStart="10dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="社團群組數："
+                android:id="@+id/textView61"
+                android:textSize="16dp"
+                android:textColor="#333" />
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:id="@+id/sp_create_course" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="課程簡介："
+            android:id="@+id/textView4"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#333" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_edittext"
+            android:id="@+id/et_create_course_info"
+            android:layout_marginBottom="160dp"
+            android:hint="請輸入"
+            android:gravity="top"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:id="@+id/button4"
+                android:onClick="createCourseCancel" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"
+                android:id="@+id/button5"
+                android:onClick="createCourseSubmit" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

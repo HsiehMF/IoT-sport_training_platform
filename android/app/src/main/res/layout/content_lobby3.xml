@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_lobby3" tools:context="com.example.administrator.myconnet.Lobby3"
+    android:background="#9BBB59">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LL_CROSS">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:id="@+id/imageButton_today"
+                android:src="@drawable/ic_event_white_36dp"
+                android:onClick="userCourse"
+                android:background="#B28286"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/tv_today"
+                android:textAlignment="center"
+                android:textSize="19dp"
+                android:layout_marginTop="-40dp"
+                android:textColor="#EEE"
+                android:text="管理訓練行程 " />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="195dp"
+                android:layout_height="180dp"
+                android:id="@+id/imageButton_my_information"
+                android:paddingBottom="15dp"
+                android:src="@drawable/ic_account_circle_white_36dp"
+                android:onClick="userInformation"
+                android:background="#74a5d3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="管理個人資訊"
+                android:id="@+id/tv_my_information"
+                android:textAlignment="center"
+                android:textSize="19dp"
+                android:layout_marginTop="-40dp"
+                android:textColor="#EEE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LL_plan">
+
+            <ImageButton
+                android:layout_width="195dp"
+                android:layout_height="180dp"
+                android:id="@+id/imageButton_write"
+                android:src="@drawable/ic_email_white_36dp"
+                android:layout_below="@+id/imageButton_today"
+                android:layout_alignStart="@+id/imageButton_today"
+                android:onClick="userInvite"
+                android:background="#F3B05A"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="申請教練"
+                android:id="@+id/tv_write"
+                android:textAlignment="center"
+                android:textSize="19dp"
+                android:layout_marginTop="-40dp"
+                android:textColor="#EEE" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout5"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:id="@+id/imageButton_today_train"
+                android:src="@drawable/ic_timer_white_36dp"
+                android:layout_below="@+id/imageButton_today"
+                android:layout_alignStart="@+id/imageButton_today"
+                android:onClick="userRecords"
+                android:paddingBottom="50dp"
+                android:background="#B1695A" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="管理訓練紀錄 "
+                android:id="@+id/tv_today_train"
+                android:textAlignment="center"
+                android:textSize="19dp"
+                android:layout_marginTop="-80dp"
+                android:textColor="#EEE" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">運動訓練管理平台</string>
+    <string name="text_fragment_a">Enter Tab A</string>
+    <string name="text_fragment_b">Enter Tab B</string>
+    <string name="tvTitle">項目</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="titles_tab">
+
+        <item>今日課表</item>
+        <item>意見回覆</item>
+
+    </string-array>
+    <string-array name="item_name">
+
+        <item>深蹲</item>
+        <item>短距離衝刺</item>
+        <item>跑步</item>
+        <item>槓鈴</item>
+
+    </string-array>
+    <string-array name="item_run_distance">
+
+        <item>100公尺</item>
+        <item>200公尺</item>
+        <item>400公尺</item>
+        <item>1600公尺</item>
+        <item>3200公尺</item>
+
+    </string-array>
+    <string-array name="item_times">
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+
+    </string-array>
+
+    <string-array name="classify">
+
+        <item>依日期分類 (新到舊)</item>
+        <item>依日期分類 (舊到新)</item>
+        <item>依群組分類 (大到小)</item>
+        <item>依群組分類 (小到大)</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_search_coach">SearchCoach</string>
+    <string name="title_activity_coach_course">CoachCourse</string>
+    <string name="title_activity_invite_apply">InviteApply</string>
+    <string name="title_activity_my_information">MyInformation</string>
+    <string name="title_activity_create_course">CreateCourse</string>
+    <string name="title_activity_end_training">EndTraining</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_coach_add_student">CoachAddStudent</string>
+    <string name="title_activity_main22">Main22Activity</string>
+    <string name="title_activity_reset_pass_word">ResetPassWord</string>
+    <string name="title_activity_create_new_plan">CreateNewPlan</string>
+    <string name="title_activity_select_course_and_crowd">SelectCourseAndCrowd</string>
+    <string name="title_activity_select_crowd">SelectCrowd</string>
+    <string name="title_activity_enter_item_list">EnterItemList</string>
+    <string name="title_activity_submit_train_plan">SubmitTrainPlan</string>
+    <string name="title_activity_select_date">SelectDate</string>
+    <string name="title_activity_select_train_plan">SelectTrainPlan</string>
+    <string name="title_activity_alter_item_list">AlterItemList</string>
+    <string name="title_activity_select_query_train_plan">SelectQueryTrainPlan</string>
+    <string name="title_activity_manage_player_invite">ManagePlayerInvite</string>
+    <string name="title_activity_invite_select_course">InviteSelectCourse</string>
+    <string name="title_activity_invite_select_crowd">InviteSelectCrowd</string>
+    <string name="title_activity_webview">webview</string>
+    <string name="title_activity_reply_select_course">ReplySelectCourse</string>
+    <string name="title_activity_reply_select_crowd">ReplySelectCrowd</string>
+    <string name="title_activity_reply_for_coach">ReplyForCoach</string>
+    <string name="title_activity_new_course_for_coach">NewCourseForCoach</string>
+    <string name="title_activity_calendar_for_coach">CalendarForCoach</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_query_today_train">QueryTodayTrain</string>
+    <string name="title_activity_lobby3">Lobby3</string>
+    <string name="title_activity_create_select_date">CreateSelectDate</string>
+    <string name="title_activity_new_course_calendar">NewCourseCalendar</string>
+    <string name="title_activity_update">update</string>
+    <string name="title_activity_web_intent">WebIntent</string>
+
+</resources>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.myconnet" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/small"
+        android:label="足感心"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+        <activity android:name=".BackgroundTask" />
+        <activity
+            android:name=".Function.Records.Records"
+            android:label="" />
+        <activity
+            android:name=".Function.Invite.Invite_click"
+            android:label=""
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Course.StartTraining"
+            android:label=""
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Public.Public"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Lobby2"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Friends.NewFriends"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Course.NewCourse"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Invite.SearchCoach"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Invite.CoachCourse"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Invite.InviteApply"
+            android:label=""
+            android:parentActivityName=".Function.Invite.CoachCourse"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Function.Invite.CoachCourse" />
+        </activity>
+        <activity
+            android:name=".Function.Friends.CreateCourse"
+            android:label=""
+            android:parentActivityName=".Function.Friends.NewFriends"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Function.Friends.NewFriends" />
+        </activity>
+        <activity
+            android:name=".MyInformation"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Course.EndTraining"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Records.Calendar"
+            android:label="@string/title_activity_main22"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Records.PlayerRecords"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".calender" />
+        <activity
+            android:name=".Function.Friends.CourseDetail"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Function.Friends.UpdatePlayer"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Friends.CreateGroup"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Friends.ChoosePlayer"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ResetPassWord"
+            android:label=""
+            android:parentActivityName=".MyInformation"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myconnet.MyInformation" />
+        </activity>
+        <activity
+            android:name=".Function.Public.CreateNewPlan"
+            android:label=""
+            android:parentActivityName=".Function.Public.Public"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myconnet.Function.Public.Public" />
+        </activity>
+        <activity
+            android:name=".Function.Public.SelectCourse"
+            android:label=""
+            android:parentActivityName=".Function.Public.CreateNewPlan"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myconnet.Function.Public.CreateNewPlan" />
+        </activity>
+        <activity
+            android:name=".Function.Public.SelectCrowd"
+            android:label=""
+            android:parentActivityName=".Function.Public.SelectCourse"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myconnet.Function.Public.SelectCourse" />
+        </activity>
+        <activity
+            android:name=".Function.Public.EnterItemList"
+            android:label=""
+            android:parentActivityName=".Function.Public.SelectCrowd"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myconnet.Function.Public.SelectCrowd" />
+        </activity>
+        <activity
+            android:name=".Function.Public.SubmitTrainPlan"
+            android:label=""
+            android:parentActivityName=".Function.Public.EnterItemList"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myconnet.Function.Public.EnterItemList" />
+        </activity>
+        <activity
+            android:name=".Function.Public.SelectDate"
+            android:label=""
+            android:parentActivityName=".Function.Public.SelectCrowd"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myconnet.Function.Public.SelectCrowd" />
+        </activity>
+        <activity
+            android:name=".Function.Public.AlterItemList"
+            android:label=""
+            android:parentActivityName=".Function.Public.SelectTrainPlan"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myconnet.Function.Public.SelectTrainPlan" />
+        </activity>
+        <activity
+            android:name=".Function.Invite.ManagePlayerInvite"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Invite.InviteSelectCourse"
+            android:label=""
+            android:parentActivityName=".Function.Invite.ManagePlayerInvite"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myconnet.Function.Invite.ManagePlayerInvite" />
+        </activity>
+        <activity
+            android:name=".Function.Invite.AddPlayer"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Invite.QueryAddedPlayer"
+            android:label=""
+            android:parentActivityName=".Function.Invite.ManagePlayerInvite"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myconnet.Function.Invite.ManagePlayerInvite" />
+        </activity>
+        <activity
+            android:name=".Function.Friends.ManageCrowd"
+            android:label=""
+            android:parentActivityName=".Function.Friends.CourseDetail"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myconnet.Function.Friends.CourseDetail" />
+        </activity>
+        <activity
+            android:name=".Function.Friends.QueryCrowd"
+            android:label=""
+            android:parentActivityName=".Function.Friends.ManageCrowd"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myconnet.Function.Friends.ManageCrowd" />
+        </activity>
+        <activity
+            android:name=".Function.Friends.ManageCrowdPlayers"
+            android:label=""
+            android:parentActivityName=".Function.Friends.QueryCrowd"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrator.myconnet.Function.Friends.QueryCrowd" />
+        </activity>
+        <activity
+            android:name=".Function.Public.QuerySelectCourse"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Public.QuerySelectCrowd"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Public.QueryTrainPlan"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Public.ApplySelectCourse"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Public.ApplySelectCrowd"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Public.ApplySelectDate"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Public.ApplySchedule"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Public.ApplyAlterItemList"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".webview"
+            android:label="@string/title_activity_webview"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Reply.ReplySelectCourse"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Reply.ReplySelectCrowd"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Reply.ReplyForCoach"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Reply.NewCourseForCoach"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Reply.CalendarForCoach"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Setting"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Public.QueryTodayTrainPlan"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Lobby3"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Public.CreateSelectDate"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Course.NewCourseCalendar"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Function.Course.update"
+            android:label="@string/title_activity_update"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".WebIntent"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

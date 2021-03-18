@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_course_detail"
+    tools:context="com.example.administrator.myconnet.Function.Friends.CourseDetail"
+    android:background="#BF9D7A">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="社團名稱"
+                android:id="@+id/textView9"
+                android:textColor="#333" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_course_detail_name"
+                android:background="@drawable/course_detail_done"
+                android:padding="5dp"
+                android:paddingStart="15dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="創立時間"
+                android:id="@+id/textView32"
+                android:textColor="#333" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_course_detail_date"
+                android:background="@drawable/course_detail_done"
+                android:padding="5dp"
+                android:paddingStart="15dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="社團教練"
+                android:id="@+id/textView33"
+                android:textColor="#333" />
+
+             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_course_detail_coach"
+                android:background="@drawable/course_detail_done"
+                android:padding="5dp"
+                android:paddingStart="15dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="社團人數"
+                android:id="@+id/textView35"
+                android:textColor="#333" />
+
+            <EditText
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_course_detail_mount"
+                android:background="@drawable/course_detail_done"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="16dp"
+                android:textAlignment="center" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:id="@+id/bt_course_detail_check_student"
+                android:src="@drawable/enter_crowd"
+                android:layout_marginLeft="10dp"
+                android:onClick="course_detail_check_student" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="社團簡介"
+                android:id="@+id/textView34"
+                android:textColor="#333" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/et_course_detail_info"
+            android:background="@drawable/course_detail_done"
+            android:padding="5dp"
+            android:paddingStart="15dp"
+            android:textSize="16dp"
+            android:gravity="top" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_edit_course_detail"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_done_course_detail"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|end"
+        android:src="@android:drawable/ic_menu_save"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/float_edit_course_detail"
+        android:layout_marginEnd="24dp" />
+
+</RelativeLayout>

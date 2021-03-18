@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ctv_choose_player"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:drawableStart="?android:attr/listChoiceIndicatorMultiple"
+    android:padding="8dp"
+    android:textAlignment="center"
+    android:gravity="center_vertical"
+    android:textColor="#222"
+    android:text="選手名稱"
+    android:paddingEnd="40dp">
+</CheckedTextView>

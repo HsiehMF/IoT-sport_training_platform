@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_camara" android:icon="@drawable/ic_today_black_48dp"
+            android:title="今日課表" />
+        <item android:id="@+id/nav_gallery" android:icon="@drawable/ic_account_circle_black"
+            android:title="我的朋友" />
+        <item android:id="@+id/nav_slideshow" android:icon="@drawable/ic_manage_apply_player_black_48dp"
+            android:title="申請通知" />
+        <item android:id="@+id/nav_manage" android:icon="@drawable/ic_timer_black_48dp"
+            android:title="紀錄" />
+    </group>
+
+    <item android:title="Setting">
+        <menu>
+            <item android:id="@+id/nav_share" android:icon="@drawable/ic_settings_black_48dp"
+                android:title="設定" />
+            <item android:id="@+id/nav_send" android:icon="@drawable/ic_power_settings_new_black_48dp"
+                android:title="登出" />
+        </menu>
+    </item>
+
+</menu>

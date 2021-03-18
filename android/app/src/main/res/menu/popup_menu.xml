@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ListAll"
+        android:title="列出今日所有訓練" />
+    <item
+        android:id="@+id/SelectDateQuery"
+        android:title="選擇日期查詢訓練" />
+
+</menu>

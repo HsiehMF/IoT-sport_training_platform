@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.easyway2in.mysqlconnect.Register"
+    android:orientation="vertical"
+    android:background="#0BB990"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="會員註冊"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:hint="ID"
+        android:id="@+id/id"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:hint="Password"
+        android:id="@+id/pwd"
+        android:inputType="textPassword"
+        android:layout_below="@+id/id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:hint="User Name"
+        android:id="@+id/name"
+        android:layout_below="@+id/pwd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:hint="Birthday"
+        android:id="@+id/birthday"
+        android:inputType="date"
+        android:layout_below="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:hint="Height"
+        android:id="@+id/height"
+        android:inputType="numberSigned"
+        android:layout_below="@+id/birthday"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:hint="Weight"
+        android:id="@+id/weight"
+        android:inputType="numberSigned"
+        android:layout_below="@+id/height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:hint="Gender"
+        android:id="@+id/gender"
+        android:inputType="numberSigned"
+        android:layout_below="@+id/weight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:hint="E-mail"
+        android:layout_below="@+id/gender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/information"
+        android:layout_below="@+id/email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Info" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="送出"
+        android:layout_gravity="right"
+        android:onClick="userReg"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+</RelativeLayout>
